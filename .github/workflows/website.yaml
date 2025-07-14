@@ -3,7 +3,7 @@ name: Deploy GitHub Pages
 
 on:
   push:
-    branches: ["master"]
+    branches: ["piosk-website"]
     paths: ['www/**']
   workflow_dispatch:
 
