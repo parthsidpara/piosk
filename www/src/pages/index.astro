@@ -37,13 +37,6 @@ import Layout from '../layouts/Layout.astro';
       </div>
       <div class="hero-video">
         <div class="video-container">
-          <div class="video-overlay">
-            <div class="play-button">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M8 5v14l11-7z"/>
-              </svg>
-            </div>
-          </div>
           <iframe 
             src="https://www.youtube.com/embed/CrQjc6P-g1A" 
             title="PiOSK Setup Video Walkthrough"
@@ -258,21 +251,6 @@ import Layout from '../layouts/Layout.astro';
 
   .video-container:hover {
     transform: scale(1.02);
-  }
-
-  .video-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    opacity: 0;
-    transition: opacity 0.3s ease;
   }
 
   .video-container:hover .video-overlay {
