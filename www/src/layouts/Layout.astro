@@ -28,7 +28,7 @@ const currentPath = Astro.url.pathname;
         <div class="nav-links">
           <a href="/piosk/" class={currentPath === '/' ? 'active' : ''}>Home</a>
           <a href="/piosk/docs" class={currentPath === '/docs' || currentPath === '/docs/' ? 'active' : ''}>Docs</a>
-          <a href="/piosk/sponsor" class={currentPath === '/sponsor' || currentPath === '/sponsor/' ? 'active' : ''}>Sponsor</a>
+          <a href="/piosk/sponsor" class={currentPath === '/sponsor' || currentPath === '/sponsor/' ? 'active' : ''}>Team</a>
         </div>
       </div>
     </nav>
@@ -83,8 +83,8 @@ const currentPath = Astro.url.pathname;
           <div class="footer-section">
             <h4>Resources</h4>
             <ul>
-              <li><a href="/docs">Documentation</a></li>
-              <li><a href="/sponsor">Support Project</a></li>
+              <li><a href="/piosk/docs">Documentation</a></li>
+              <li><a href="https://github.com/sponsors/debloper">Support Project</a></li>
               <li>
                 <a href="https://github.com/debloper/piosk/discussions" target="_blank">
                   <svg viewBox="0 0 24 24" fill="currentColor">
