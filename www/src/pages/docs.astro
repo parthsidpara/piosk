@@ -151,11 +151,14 @@ import Layout from '../layouts/Layout.astro';
           <h3 id="assumptions">2.1 Assumptions</h3>
           <ol start="0">
             <li>You're using a Raspberry Pi (other SBCs may work, not tested)</li>
-            <li>You're using "Raspberry Pi OS (64bit)" (This is a mandatory requirement for PiOSK (version 4.0.0 and newer). PiOSK now uses the Deno runtime, which does not provide official binaries for 32-bit ARM systems. This change allows PiOSK to be a standalone executable, simplifying installation by removing the need for a separate Node.js runtime.)</li>
-            <li>You've applied proper OS customizations & the Pi is able to access the internet (required for setup)</li>
+            <li>You're using "<a href="https://www.raspberrypi.com/software/operating-systems/#raspberry-pi-os-64-bit" target="_blank">Raspberry Pi OS (64bit)</a>" (required for PiOSK 4.0.0+)</li>
+            <li>You've applied proper <a href="https://www.raspberrypi.com/documentation/computers/getting-started.html#advanced-options" target="_blank">OS customizations</a> & the Pi is able to access the internet (required for setup)</li>
             <li>You're not using port 80 on the Pi to run some other web server (apart from PiOSK dashboard)</li>
           </ol>
-          
+          <div class="note">
+            <p><strong>Why 64-bit OS is required:</strong><br>
+            PiOSK (version 4.0.0 and newer) now uses the Deno runtime, which does not provide official binaries for 32-bit ARM systems. This change allows PiOSK to be a standalone executable, simplifying installation by removing the need for a separate Node.js runtime.</p>
+          </div>
           <h3 id="recommendations">2.2 Recommendations</h3>
           <h4>Choose the right device and OS</h4>
           <ul>
