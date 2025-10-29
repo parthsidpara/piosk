@@ -49,7 +49,7 @@ download_and_extract() {
     
     local tarball_name="piosk-${PKG_ARCH}.tar.gz"
     
-    local download_url="https://github.com/$PIOSK_REPO/releases/latest/download/$tarball_name"
+    local download_url="https://github.com/$PIOSK_REPO/releases/v4.0.9/download/$tarball_name"
     local temp_tarball="/tmp/$tarball_name"
     
     msg "$INFO" "Downloading latest package for '$PKG_ARCH'..."
