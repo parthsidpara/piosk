@@ -8,7 +8,7 @@ set -euo pipefail
 # curl -sSL https://code.debs.io/piosk/bootstrap.sh | sudo bash -s -- [command]
 
 # --- Configuration ---
-readonly PIOSK_REPO="parthsidpara/piosk"
+readonly PIOSK_REPO="debloper/piosk"
 readonly PIOSK_INSTALL_DIR="/opt/piosk"
 readonly PIOSK_TEMP_DIR="/opt/piosk.new"
 
